@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sora White-Feedback</title>
+  <link rel="stylesheet" href="/css/mining.css" />
+    <link rel="stylesheet" href="/css/topandnavbar.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/topBtn.css" />
+    <link rel="stylesheet" href="/css/google.css" />
+
+    <!-- Font Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .feedback-section-body {
+          background-image: url('/assets/about&production/6.jpg');
+          background-size: cover;
+          background-position: center;
+          height: 100vh;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0.99; 
+          backdrop-filter: blur(5px); 
+          font-family: "Roboto";
+          font-weight: 300;
+      }
+      .feedback {
+          background-color: rgba(255, 255, 255, 0.8); 
+          padding: 20px;
+          border-radius: 10px;
+          width: 80%;
+          max-width: 600px;
+          text-align: center;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+      }
+      .feedback h2 {
+          font-size: 40px;
+          color: #333; 
+          margin-bottom: 20px;
+      }
+      .input-box {
+          display: flex;
+          flex-wrap: wrap; 
+          justify-content: space-between;
+          margin-bottom: 15px;
+      }
+      .input-box .input-field {
+          width: calc(50% - 10px); 
+          margin-bottom: 10px; 
+      }
+      .field .item {
+          background: transparent;
+          border: 2px solid rgba(0, 0, 0, 0.2); 
+          border-radius: 6px;
+          color: #333; 
+          padding: 0.75rem;
+          margin: 0.5rem 0;
+          font-size: 1rem;
+          width: 100%;
+          transition: border-color 0.3s ease; 
+      }
+      .field .item::placeholder {
+          color: rgba(0, 0, 0, 0.5); 
+      }
+      .field .item:focus {
+          outline: none; 
+          border-color: rgba(0, 0, 0, 0.5); 
+      }
+      .textarea-field textarea {
+  width: 100%; 
+  height: 200px; 
+  resize: none; 
+}
+
+      form button {
+          padding: 0.75rem 2rem;
+          background: #2091fe; 
+          border: none; 
+          border-radius: 6px;
+          color: white;
+          letter-spacing: 1px;
+          font-weight: 600;
+          cursor: pointer;
+          margin-top: 20px;
+          transition: background-color 0.3s ease;
+          font-family: "Roboto";
+          font-weight: 300;
+      }
+      form button:hover {
+          background-color: #FF6347; 
+      }
+      .error-message {
+          color: red;
+          margin-top: 5px;
+          display: none; 
+      }
+  </style>
+</head>
+<body oncontextmenu="return false;"> 
+
+  <!-- Top Btn -->
+  <button onclick="topFunction()" id="mytopBtn" title="Go to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Mid Bar -->
+  <div class="mid-bar">
+    <div class="sora-heading">
+      <img src="/assets/Logo/logo srw2.jpg" alt="" />
+      <h1>SORA WHITE  <br><span>A STEP TOWARDS QUALITY...</span></h1>
+    </div>
+    <div id="google_translate_element"></div>
+    <div class="sora-icons">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-external">
+    <div class="container-fluid nav-color">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link active nav-effects"
+              aria-current="page"
+              href="/"
+              ><i class="fa-solid fa-house"></i> Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active nav-effects"
+              aria-current="page"
+              href="AboutUs.html"
+              ><i class="fa-solid fa-book-bookmark"></i> About</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle nav-effects"
+              href=""
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              ><i class="fa-solid fa-truck-fast"></i>
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="Quartz.html">Quartz</a>
+              </li>
+              <hr />
+              <li>
+                <a class="dropdown-item" href="Feldspar.html">Feldspar</a>
+              </li>
+              <hr />
+              <li>
+                <a class="dropdown-item" href="Ramming-mass.html"
+                  >Ramming Mass</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a class="dropdown-item" href="silicasand.html"
+                  >Silica Sand</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a class="dropdown-item" href="Dolomite.html">Dolomite</a>
+              </li>
+
+              <!-- <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Product</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle nav-effects"
+              href=""
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              ><i class="fa-solid fa-bars-progress"></i>
+              Operations
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="mining.html">Mining</a>
+              </li>
+              <hr />
+              <li>
+                <a class="dropdown-item" href="processing.html">Processing</a>
+              </li>
+              <hr />
+              <li>
+                <a class="dropdown-item" href="quality.html"
+                  >Quality Assurance</a
+                >
+              </li>
+
+              <!-- <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active nav-effects"
+              aria-current="page"
+              href="OurGallery.html"
+              ><i class="fa-regular fa-image"></i> Gallery</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link nav-effects"
+              aria-current="page"
+              href="contact.html"
+              ><i class="fa-solid fa-phone"></i> Contact Us</a
+            >
+          </li>
+          <!--<li class="nav-item">-->
+          <!--  <a-->
+          <!--    class="nav-link nav-effects"-->
+          <!--    aria-current="page"-->
+          <!--    href="feedback_form.html"-->
+          <!--    ><i class="fa-regular fa-comment-dots"></i> Feedback</a-->
+          <!--  >-->
+          <!--</li>-->
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+        <form id="valueForm" class="d-flex search-form" role="search">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+            id="searchInput"
+          />
+          <button onclick="search()" class="btn btn-outline-success search-btn" type="submit" value="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="feedback-section-body">
+  <section class="feedback">
+    <h2>Feedback Form</h2>
+
+    <form id="feedbackForm" action="feedback.php" onsubmit="return validateForm()">
+        <div class="input-box">
+            <div class="input-field field">
+                <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                <span class="error-message" id="nameError">Name can't be blank</span>
+            </div>
+            <div class="input-field field">
+                <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                <span class="error-message" id="emailError">Email can't be blank</span>
+            </div>
+            <div class="input-field field">
+                <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                <span class="error-message" id="phoneError">Phone number can't be blank</span>
+            </div>
+            <div class="input-field field">
+                <input type="text" placeholder="Product" id="product" class="item" autocomplete="off">
+                <span class="error-message" id="productError">Product can't be blank</span>
+            </div>                
+        </div>
+        <div class="textarea-field field">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+            <span class="error-message" id="messageError">Message can't be blank</span>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+</div>
+
+
+  <!-- footer section start -->
+  <footer class="footer-01">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+          <h2 class="footer-heading">SORA WHITE</h2>
+          <div
+            class="footer-logo"
+            style="
+              width: 40%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <img
+              src="/assets/Logo/logo srw2.jpg"
+              alt=""
+              style="width: 70%; border-radius: 100px;"
+            />
+          </div>
+          <p>
+            SORA WHITE Pvt.Ltd. is your trusted partner for high-quality
+            minerals that cater to various industries. With our commitment to
+            quality, innovation, and customer satisfaction, along with our
+            advanced manufacturing unit, access to high-quality raw materials,
+          </p>
+          <ul class="ftco-footer-social p-0">
+            <li class="ftco-animate">
+              <a
+                href=""
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Twitter"
+                ><span class="ion-logo-twitter"
+                  ><i class="fa-brands fa-facebook"></i></span
+              ></a>
+            </li>
+            <li class="ftco-animate">
+              <a
+                href=""
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Facebook"
+                ><span class="ion-logo-facebook"
+                  ><i class="fa-brands fa-linkedin"></i></span
+              ></a>
+            </li>
+            <li class="ftco-animate">
+              <a
+                href=""
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Instagram"
+                ><span class="ion-logo-instagram"
+                  ><i class="fa-brands fa-instagram"></i></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+          <h2 class="footer-heading">Latest News</h2>
+          <div class="block-21 mb-4 d-flex">
+            <a
+              class="img mr-4 rounded"
+              style="background-image: url(/assets//footer/image_1.jpg)"
+            ></a>
+            <div class="text">
+              <h3 class="heading">
+                <a href="#"
+                  >Even the all-powerful Pointing has no control about</a
+                >
+              </h3>
+              <div class="meta">
+                <div>
+                  <a href="#"
+                    ><span class="icon-calendar"></span>Feb. 15, 2024</a
+                  >
+                </div>
+                <div>
+                  <a href="#"><span class="icon-person"></span> Admin</a>
+                </div>
+                <div>
+                  <a href="#"><span class="icon-chat"></span>24</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block-21 mb-4 d-flex">
+            <a
+              class="img mr-4 rounded"
+              style="background-image: url(/assets//footer/image_2.jpg)"
+            ></a>
+            <div class="text">
+              <h3 class="heading">
+                <a href="#"
+                  >Even the all-powerful Pointing has no control about</a
+                >
+              </h3>
+              <div class="meta">
+                <div>
+                  <a href="#"
+                    ><span class="icon-calendar"></span>Feb, 15, 2024</a
+                  >
+                </div>
+                <div>
+                  <a href="#"><span class="icon-person"></span> Admin</a>
+                </div>
+                <div>
+                  <a href="#"><span class="icon-chat"></span>24</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+          <h2 class="footer-heading">Quick Links</h2>
+          <ul class="list-unstyled">
+            <li><a href="/" class="py-2 d-block">Home</a></li>
+            <li>
+              <a href="AboutUs.html" class="py-2 d-block">About</a>
+            </li>
+            <li><a href="#Products" class="py-2 d-block">Product</a></li>
+            <li>
+              <a href="OurGallery.html" class="py-2 d-block">Gallery</a>
+            </li>
+            <li>
+              <a href="contact.html" class="py-2 d-block">Contact</a>
+            </li>
+            <!--<li>-->
+            <!--  <a href="feedback_form.html" class="py-2 d-block">Feedback</a>-->
+            <!--</li>-->
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+          <h2 class="footer-heading">Have a Questions?</h2>
+          <div class="block-23 mb-3">
+            <ul>
+              <li>
+                <span class="icon ion-ios-pin"
+                  ><i class="fa-solid fa-location-dot"></i></span
+                ><span class="text"
+                  >G-110, 111 Riico Industrial Area, Jaipur Road, Kekri Dist.
+                  Ajmer (Rajasthan) P.O. BOX 305404</span
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="icon ion-ios-call"
+                    ><i class="fa-solid fa-phone"></i></span
+                  ><span class="text">+91-9414000363</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="icon ion-ios-send"
+                    ><i class="fa-solid fa-paper-plane"></i></span
+                  ><span class="text">sanjay.shivamin@gmail.com</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-12 text-center">
+          <hr />
+
+          <p class="copyright">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy; 2024
+            <!-- <script>
+              document.write(new Date().getFullYear());
+            </script> -->
+            All rights reserved | Made by
+            <a href="https://Softapper.com" target="_blank">Softapper</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+  <!-- Bootstrap -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="/js/topBtn.js"></script>
+  <script src="/js/search.js"></script>
+
+  <!-- Google Translate -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        },
+        "google_translate_element"
+      );
+    }
+  </script>
+  <script
+    type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+  ></script>
+
+  <!-- Form Script -->
+
+  <script>
+    document.getElementById("name").addEventListener("input", removeErrorMessage);
+    document.getElementById("email").addEventListener("input", removeErrorMessage);
+    document.getElementById("phone").addEventListener("input", removeErrorMessage);
+    document.getElementById("product").addEventListener("input", removeErrorMessage);
+    document.getElementById("message").addEventListener("input", removeErrorMessage);
+
+    function removeErrorMessage(event) {
+        var fieldName = event.target.id;
+        document.getElementById(fieldName + "Error").style.display = "none"; 
+    }
+
+    function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var subject = document.getElementById("product").value;
+        var message = document.getElementById("message").value;
+        var isValid = true;
+
+        if (name.trim() === '') {
+            document.getElementById("nameError").style.display = "block"; 
+            isValid = false;
+        } else {
+            document.getElementById("nameError").style.display = "none"; 
+        }
+
+        if (email.trim() === '') {
+            document.getElementById("emailError").style.display = "block"; 
+            isValid = false;
+        } else if (!isValidEmail(email)) {
+            document.getElementById("emailError").innerText = "Please enter a valid email address";
+            document.getElementById("emailError").style.display = "block"; 
+            isValid = false;
+        } else {
+            document.getElementById("emailError").style.display = "none"; 
+        }
+
+        if (phone.trim() === '') {
+            document.getElementById("phoneError").style.display = "block"; 
+            isValid = false;
+        } else if (phone.length < 10) {
+            document.getElementById("phoneError").innerText = "Please enter a valid phone number";
+            document.getElementById("phoneError").style.display = "block"; 
+            isValid = false;
+        } else {
+            document.getElementById("phoneError").style.display = "none"; 
+        }
+
+        if (subject.trim() === '') {
+            document.getElementById("productError").style.display = "block"; 
+            isValid = false;
+        } else {
+            document.getElementById("productError").style.display = "none"; 
+        }
+
+        if (message.trim() === '') {
+            document.getElementById("messageError").style.display = "block"; 
+            isValid = false;
+        } else {
+            document.getElementById("messageError").style.display = "none"; 
+        }
+
+        return isValid;
+    }
+
+    function isValidEmail(email) {
+        
+        var emailRegex = /\S+@\S+\.\S+/;
+        return emailRegex.test(email);
+    }
+
+</script>
+</body>
+</html>

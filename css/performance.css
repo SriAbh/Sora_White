@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+
+.card-1, .card-2{
+    display: flex;
+}
+
+.core-values-section{
+    padding: 6%;
+}
+
+.card-section{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 2% 0px;
+    /* height: 100vh;  
+    align-items: center; */
+}
+
+.core-values-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.core-values-heading h1{
+    font-family: "roboto" !important;
+    color: #2091fe;
+    font-weight: 300;
+    font-size: 3rem;
+    /* transform: translateX(-100%) */
+}
+
+.core-values-heading h1::after{
+    content: "";
+    position: relative;
+    display: flex;
+    width: 50%;
+    left: 25%;
+    height: 2px;
+    background-color: #c79546;
+    border-radius: 5px;
+}
+
+.cards{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 15px;
+    border: none ;
+}
+
+.card-body .card-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    background-color: #c7954c;
+    /* width: 26%; */
+    border-radius: 68px;
+}
+
+.card-body .card-icons::before{
+    /* content: ""; */
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 123.5px;
+    border-radius: 161px;
+    height: 70px;
+    width: 70px;
+    background-color: #c7954c;
+}
+
+.card-body h1 i{
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+.card-body p{
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+.card-body h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 992px) {
+    .card-section{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,161 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.contact-content h1{
+  font-family: "roboto" !important;
+  color: #2091fe;
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  /* transform: translateX(-100%) */
+}
+
+.contact-content h1::after{
+  content: "";
+  position: relative;
+  display: flex;
+  width: 50%;
+  left: 25%;
+  height: 2px;
+  background-color: #c79546;
+  border-radius: 5px;
+}
+
+.invalid-feedback,
+.empty-feedback {
+  display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #dc3545;
+}
+
+.shadow-sm {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  /* background: url("/assets/—Pngtree—business\ cooperation\ handshake\ city\ background_2446009.png")no-repeat center center/cover; */
+  /* opacity: .5; */
+  padding: 20px;
+}
+
+#animatedCard {
+  width: 34rem !important;
+  background: #c79546 !important;
+  position: relative !important;
+  top: 0% !important;
+  left: 327px;
+  border: none;
+  /* z-index: -1; */
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 300 !important;
+  cursor: pointer !important;
+}
+
+.animate-1 {
+  animation: moveleft 2s forwards !important;
+}
+
+.animate-2 {
+  animation: moveright 2s forwards !important;
+}
+
+@keyframes moveleft {
+  from {
+    left: 327px;
+  }
+  to {
+    left: 2%;
+  }
+}
+
+@keyframes moveright {
+  from {
+    left: 2%;
+  }
+  to {
+    left: 327px;
+  }
+}
+
+.card-img-top {
+  display: flex;
+  justify-content: center;
+  width: 48% !important;
+  align-items: center;
+  margin: auto;
+  padding: 9px 0px;
+}
+
+.list-group-item a {
+  color: #2091fe;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 18px;
+}
+
+.list-group-item a:hover {
+  color: #c79546 !important;
+  transition: all 0.5s;
+}
+
+.list-group hr {
+  margin: 0px !important;
+  border-color: #c79546;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: justify;
+  font-weight: 300;
+  padding: 2%;
+  /* padding-bottom: 8%; */
+}
+
+.contact-card-icons {
+  position: relative;
+  right: 35px;
+  /* top: 5px; */
+  font-size: 25px;
+  background-color: #c79546;
+  padding: 5px;
+  display: flex;
+  color: white;
+  border-radius: 25px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1300px) {
+  .contact-details {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  #animatedCard {
+    display: none;
+  }
+}

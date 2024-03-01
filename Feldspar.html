@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SORA WHITE-Feldspar</title>
+<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+
+<link rel="stylesheet" href="/css/topBtn.css">
+    <link rel="stylesheet" href="/css/google.css" />
+    <link rel="stylesheet" href="/css/topandnavbar.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+<!-- Bootstrap CSS -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+<style>
+
+  .underline-heading {
+display: inline-block;
+position: relative;
+}
+
+.underline-heading::after {
+/* content: ""; */
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 100%;
+height: 2px;
+background-color: #2091fe;
+}
+
+.highlight-heading{
+        font-weight: 350;
+    }
+  
+    .header-section {
+            background-image: url('/assets/about&production/Feldspar.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 100px 0;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #2091fe;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .header-section p {
+            font-size: 1.2rem;
+            color: white;
+            animation: fadeInUp 1s ease-out 0.5s;
+        }
+
+        .header-section img {
+            display: none;  
+        }
+  .animated-text {
+    animation-name: slideInFromLeft;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+  }
+
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .card {
+    transition:transform 0.3s ease, opacity 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+
+
+  .card {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+  /* Apply scale transformation on hover */
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #chemical_specification {
+    font-size: 18px;
+    padding: 20px;
+    background-color: rgb(201, 196, 196); /* Light gray background */
+    color: #fff; /* Set text color to white */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-out;
+  }
+  #chemical_specification h2 {
+    color: #2091fe; /* Orange-red color */
+}
+
+  #chemical_specification:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Increase font size and add margin for individual specifications */
+  #chemical_specification p {
+    margin-bottom: 10px;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Apply animation to the chemical specification section */
+  #chemical_specification {
+    animation: fadeIn 1s ease-out;
+  }
+  .card-img-top {
+        height: 200px; /* Adjust the height as needed */
+        object-fit: cover; /* This property ensures the image covers the entire area of the container */
+    }
+    h1, h2, h3, h4, h5, h6, p, li, table{
+  font-family: "Roboto" !important;
+  font-weight: 300 !important;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+</style>
+</head>
+<body oncontextmenu="return false;">
+
+  <!-- Top Btn -->
+  <button onclick="topFunction()" id="mytopBtn" title="Go to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+   <!-- Mid Bar -->
+   <div class="mid-bar">
+    <div class="sora-heading" id="sora-heading">
+      <img src="/assets/Logo/logo srw2.jpg" alt="" />
+      <h1>SORA WHITE  <br><span>A STEP TOWARDS QUALITY...</span></h1>
+    </div>
+    <div id="google_translate_element"></div>
+    <div class="sora-icons">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-external">
+    <div class="container-fluid nav-color">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link active nav-effects"
+              aria-current="page"
+              href="/"
+              ><i class="fa-solid fa-house"></i> Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active nav-effects"
+              aria-current="page"
+              href="AboutUs"
+              ><i class="fa-solid fa-book-bookmark"></i> About</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle nav-effects"
+              href=""
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              ><i class="fa-solid fa-truck-fast"></i>
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="Quartz">Quartz</a>
+              </li>
+              <hr />
+              <li>
+                <a class="dropdown-item" href="Feldspar">Feldspar</a>
+              </li>
+              <hr />
+              <li>
+                <a class="dropdown-item" href="Ramming-mass"
+                  >Ramming Mass</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a class="dropdown-item" href="silicasand"
+                  >Silica Sand</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a class="dropdown-item" href="Dolomite">Dolomite</a>
+              </li>
+
+              <!-- <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Product</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle nav-effects"
+              href=""
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              ><i class="fa-solid fa-bars-progress"></i>
+              Operations
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="mining">Mining</a>
+              </li>
+              <hr />
+              <li>
+                <a class="dropdown-item" href="processing">Processing</a>
+              </li>
+              <hr />
+              <li>
+                <a class="dropdown-item" href="quality"
+                  >Quality Assurance</a
+                >
+              </li>
+
+              <!-- <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active nav-effects"
+              aria-current="page"
+              href="OurGallery"
+              ><i class="fa-regular fa-image"></i> Gallery</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link nav-effects"
+              aria-current="page"
+              href="contact"
+              ><i class="fa-solid fa-phone"></i> Contact Us</a
+            >
+          </li>
+          <!--<li class="nav-item">-->
+          <!--  <a-->
+          <!--    class="nav-link nav-effects"-->
+          <!--    aria-current="page"-->
+          <!--    href="feedback_form"-->
+          <!--    ><i class="fa-regular fa-comment-dots"></i> Feedback</a-->
+          <!--  >-->
+          <!--</li>-->
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+        <form id="valueForm" class="d-flex search-form" role="search">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+            id="searchInput"
+          />
+          <button onclick="search()" class="btn btn-outline-success search-btn" type="submit" value="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!-- Header Section -->
+<header class="header-section">
+  <div class="container ">
+    <h1 class="display-4 highlight-heading">Feldspar</h1>
+    <p class="lead animated-text">Feldspar is a group of rock-forming minerals commonly used in ceramics, glassmaking, and various other industries.Feldsparis a common mineral that isfound in many types ofrocks, including igneous, metamorphic,
+      and sedimentary rocks. Potash feldspar and Soda feldspar are two types of feldspar mineralsthat are
+      commonly used in a variety of industries due to their unique properties. Both are classified as alkali
+      feldspars, and their chemical compositions differslightly.</p>
+  </div>
+</header>
+
+<!-- Main Content -->
+<div class="container mt-5" style="padding-bottom: 3%;">
+  <section id="chemical_specification">
+    <h2 class="underline-heading">Chemical Specification</h2>
+    <p>Chemical Composition: Potassium Feldspar (KAlSi<sub>3</sub>O<sub>8</sub>) and Sodium Feldspar (NaAlSi<sub>3</sub>O<sub>8</sub>)</p>
+    <p>Impurities: Iron Oxide (Fe<sub>2</sub>O<sub>3</sub>), Calcium Oxide (CaO), Magnesium Oxide (MgO)</p>
+  </section>
+
+  <section id="uses" class="mt-5">
+    <h2 class="underline-heading" style="color: #2091fe;">Applications</h2>
+    <ul>
+      <li>Glass Manufacturing: Feldspar grains are used in the manufacturing of glass to improve its transparency and durability.</li>
+      <li>Construction: Feldspar stone is widely used in the construction industry for making countertops, flooring, and wall cladding.</li>
+      <li>Electronics: Feldspar crystals are used in electronic devices such as watches, clocks, and computers to provide accurate timing.</li>
+      <li>Paints and Coatings: Feldspar powder is used as a filler material in paints and coatings to improve their durability and scratch resistance.</li>
+      <li>Ceramics: Feldspar is a key component in the production of ceramics, such as tiles, dinnerware, and sanitary ware. It acts as a fluxing agent to lower the melting temperature of the ceramic material and improve its properties, such as strength and durability.</li>
+    </ul>
+  </section>
+
+  <section id="products" class="mt-5">
+    <h2 class="mb-4 underline-heading" style="color: #2091fe;">Products</h2>
+  <div class="row">
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="/assets/about&production/Feldspar_Ceramics.jpg" class="card-img-top" alt="Feldspar Ceramics">
+            <div class="card-body">
+                <h5 class="card-title">Feldspar Ceramics</h5>
+                <p class="card-text">Feldspar ceramics, a vital component in pottery and ceramic production, enhance the strength and durability.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="/assets/about&production/Feldspar_Glass.jpg" class="card-img-top" alt="Feldspar Glass">
+            <div class="card-body">
+                <h5 class="card-title">Feldspar Glass</h5>
+                <p class="card-text">Used in glass manufacturing to reduce melting temperature and improve clarity and strength.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="/assets/about&production/Feldspar_Paints.jpg" class="card-img-top" alt="Feldspar Paints">
+            <div class="card-body">
+                <h5 class="card-title">Feldspar Paints</h5>
+                <p class="card-text">Used as a filler material in paints and coatings to enhance durability and scratch resistance.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="/assets/about&production/Feldspar_Countertops.jpg" class="card-img-top" alt="Feldspar Countertops">
+            <div class="card-body">
+                <h5 class="card-title">Feldspar Countertops</h5>
+                <p class="card-text">Used in the manufacturing of countertops for their durability, scratch resistance, and hygienic properties.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="/assets/about&production/Feldspar_Lamps.jpg" class="card-img-top" alt="Feldspar Lamps">
+            <div class="card-body">
+                <h5 class="card-title">Feldspar Lamps</h5>
+                <p class="card-text">Used in lamp manufacturing for UV transparency, suitable for sterilization and industrial lighting.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="/assets/about&production/Feldspar_Crucibles.jpg" class="card-img-top" alt="Feldspar Crucibles">
+            <div class="card-body">
+                <h5 class="card-title">Feldspar Crucibles</h5>
+                <p class="card-text">Used in metallurgy and chemical processes for their high melting points and corrosion resistance.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-3">
+  <h2 class="mb-4 underline-heading" style="color:#2091fe">Feldspar Forms and Sizes</h2>
+  <div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Chemical Composition</th>
+        <th>Color</th>
+        <th>Mohs Hardness</th>
+        <th>Mesh Sizes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Potash Feldspar</td>
+        <td>K2O, Al2O3, SiO2</td>
+        <td>Pink, White, Gray</td>
+        <td>6-6.5</td>
+        <td>All mesh sizes available</td>
+      </tr>
+      <tr>
+        <td>Soda Feldspar</td>
+        <td>Na2O, Al2O3, SiO2</td>
+        <td>White, Gray, Yellow</td>
+        <td>6-6.5</td>
+        <td>All mesh sizes available</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p>All mesh sizes and other specifications are available as per the specific requirements of the customers.</p>
+</div>
+
+</div>
+
+<!-- footer section start -->
+<footer class="footer-01">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+        <h2 class="footer-heading">SORA WHITE</h2>
+        <div
+          class="footer-logo"
+          style="
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <img
+            src="/assets/Logo/logo srw2.png"
+            alt=""
+            style="width: 70%; border-radius: 100px;"
+          />
+        </div>
+        <p>
+          SORA WHITE Pvt.Ltd. is your trusted partner for high-quality
+          minerals that cater to various industries. With our commitment to
+          quality, innovation, and customer satisfaction, along with our
+          advanced manufacturing unit, access to high-quality raw materials,
+        </p>
+        <ul class="ftco-footer-social p-0">
+          <li class="ftco-animate">
+            <a
+              href=""
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Twitter"
+              ><span class="ion-logo-twitter"
+                ><i class="fa-brands fa-facebook"></i></span
+            ></a>
+          </li>
+          <li class="ftco-animate">
+            <a
+              href=""
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Facebook"
+              ><span class="ion-logo-facebook"
+                ><i class="fa-brands fa-linkedin"></i></span
+            ></a>
+          </li>
+          <li class="ftco-animate">
+            <a
+              href=""
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Instagram"
+              ><span class="ion-logo-instagram"
+                ><i class="fa-brands fa-instagram"></i></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+        <h2 class="footer-heading">Latest News</h2>
+        <div class="block-21 mb-4 d-flex">
+          <a
+            class="img mr-4 rounded"
+            style="background-image: url(/assets//footer/image_1.jpg)"
+          ></a>
+          <div class="text">
+            <h3 class="heading">
+              <a href="#"
+                >Even the all-powerful Pointing has no control about</a
+              >
+            </h3>
+            <div class="meta">
+              <div>
+                <a href="#"
+                  ><span class="icon-calendar"></span>Feb. 15, 2024</a
+                >
+              </div>
+              <div>
+                <a href="#"><span class="icon-person"></span> Admin</a>
+              </div>
+              <div>
+                <a href="#"><span class="icon-chat"></span>24</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-21 mb-4 d-flex">
+          <a
+            class="img mr-4 rounded"
+            style="background-image: url(/assets//footer/image_2.jpg)"
+          ></a>
+          <div class="text">
+            <h3 class="heading">
+              <a href="#"
+                >Even the all-powerful Pointing has no control about</a
+              >
+            </h3>
+            <div class="meta">
+              <div>
+                <a href="#"
+                  ><span class="icon-calendar"></span>Feb, 15, 2024</a
+                >
+              </div>
+              <div>
+                <a href="#"><span class="icon-person"></span> Admin</a>
+              </div>
+              <div>
+                <a href="#"><span class="icon-chat"></span>24</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+        <h2 class="footer-heading">Quick Links</h2>
+        <ul class="list-unstyled">
+          <li><a href="/" class="py-2 d-block">Home</a></li>
+          <li>
+            <a href="AboutUs" class="py-2 d-block">About</a>
+          </li>
+          <li><a href="#Products" class="py-2 d-block">Product</a></li>
+          <li>
+            <a href="OurGallery" class="py-2 d-block">Gallery</a>
+          </li>
+          <li>
+            <a href="contact" class="py-2 d-block">Contact</a>
+          </li>
+          <!--<li>-->
+          <!--  <a href="feedback_form" class="py-2 d-block">Feedback</a>-->
+          <!--</li>-->
+        </ul>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+        <h2 class="footer-heading">Have a Questions?</h2>
+        <div class="block-23 mb-3">
+          <ul>
+            <li>
+              <span class="icon ion-ios-pin"
+                ><i class="fa-solid fa-location-dot"></i></span
+              ><span class="text"
+                >G-110, 111 Riico Industrial Area, Jaipur Road, Kekri Dist.
+                Ajmer (Rajasthan) P.O. BOX 305404</span
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="icon ion-ios-call"
+                  ><i class="fa-solid fa-phone"></i></span
+                ><span class="text">+91-9414000363</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="icon ion-ios-send"
+                  ><i class="fa-solid fa-paper-plane"></i></span
+                ><span class="text">sanjay.shivamin@gmail.com</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-12 text-center">
+        <hr />
+
+        <p class="copyright">
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy; 2024
+          <!-- <script>
+            document.write(new Date().getFullYear());
+          </script> -->
+          All rights reserved | Made by
+          <a href="https://Softapper.com" target="_blank">Softapper</a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer section end -->
+
+
+<!-- Bootstrap -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"
+></script>
+
+<!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
+></script>
+
+<!-- Google Translate -->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: "en",
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    },
+    "google_translate_element"
+  );
+}
+</script>
+<script
+type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+></script>
+
+    <script src="/js/topBtn.js"></script>
+    <script src="/js/search.js"></script>
+
+<!-- Bootstrap JS, jQuery, and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Add this script tag at the end of your HTML body -->
+<script>
+  // Smooth scrolling for anchor links
+  $(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+
+  // Parallax effect for header background image
+  $(window).scroll(function() {
+    var scrollTop = $(this).scrollTop();
+    $('.header-section').css('background-position-y', -(scrollTop / 2) + 'px');
+  });
+</script>
+
+</body>
+</html>

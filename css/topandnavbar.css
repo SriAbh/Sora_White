@@ -1,0 +1,438 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0.381);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #2091fe;
+    border-radius: 10px;
+  }
+
+
+.top-bar{
+    display: flex;
+}
+
+.top-bar-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    /* height: 8vh; */
+    color: black;
+    gap: 10px;
+    /* width: 68%; */
+    padding: 14px 0px;
+}
+
+.top-bar-left h3{
+    font-size: 1.5rem !important;
+    font-weight: 300 !important;
+    margin-bottom: 0 !important;
+}
+
+.top-bar-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 10vh; */
+    background-color: #c79546;
+    /* width: 32%; */
+}
+
+.top-bar-right a{
+    color: #e0e0e0;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    gap: 10px;
+}
+
+.mid-bar{
+    display: flex;
+    /* height: 10vh; */
+    width: 100%;
+    align-items: center;
+    padding: .5% 0px;
+    background-color: #c79546;
+    /* justify-content: center; */
+}
+
+.mid-bar .sora-heading img{
+    width: 5%;
+    border-radius: 100px;
+}
+
+.mid-bar .sora-heading{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    color: #e0e0e0;
+    /* padding-left: 23%; */
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.mid-bar .sora-heading h1{
+    font-size: 2.1rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 2px !important;
+    font-family: "Roboto" !important;
+    margin-bottom: 0px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.mid-bar .sora-heading h1 span{
+    font-size: 1rem;
+    letter-spacing: 0px;
+}
+
+.mid-bar .sora-icons{
+    display: flex;
+    font-size: 2rem;
+    /* padding-right: 8%; */
+    /* padding-left: 30%; */
+    width: 30%;
+    /* justify-content: end; */
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.sora-icons i{
+    color: #e0e0e0;
+    position: relative;
+    bottom: 0px;
+    transition: bottom .2s linear;
+}
+
+.sora-icons i:hover{
+    color: #0064bb;
+    position: relative;
+    bottom: 7px; 
+}
+
+.navbar-external{
+    padding: 0px !important;
+    box-shadow: none !important;
+    position: sticky !important;
+    z-index: 100 !important;
+    top: 0 !important;
+
+}
+
+.nav-color{
+    background-color: #e0e0e0 !important;
+}
+
+.btn-outline-success{
+    color: #2091fe !important;
+    font-size: 1.3rem !important;
+    /* padding: 0px 12px; */
+    border: none !important;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+#navbarSupportedContent ul{
+    gap: 20px !important;
+    margin: auto;
+}
+
+#navbarSupportedContent{
+    padding-left: 1% !important;
+}
+
+#navbarSupportedContent ul li .nav-effects{
+    font-weight: 300 !important;
+    font-size: 1.2rem !important;
+    color: #2091fe !important;
+}
+
+#navbarSupportedContent ul li .nav-effects:hover{
+    color: #2091fe !important;
+
+}
+
+#navbarSupportedContent ul li .nav-effects::before {
+    content: "";
+    position: relative;
+    display: block !important;
+    width: 100% !important;
+    height: 2px;
+    /* bottom: 0; */
+    top: 30px;
+    left: 0;
+    background-color: #2091fe;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  #navbarSupportedContent ul li .nav-effects:hover::before {
+    transform: scaleX(1);
+}
+
+.search-btn:hover{
+    background-color: transparent !important;
+}
+
+.dropdown-menu{
+    border-radius: 3px !important;
+    padding: 0px !important;
+    background-color: white !important;
+}
+
+.dropdown-menu hr{
+    margin: 2px 0px !important;
+}
+
+.dropdown-item{
+    width: 200px !important;
+    padding: 6px 20px !important;
+    font-size: 1rem !important;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 300 !important;
+    color: #2091fe !important;
+}
+
+.dropdown-item:active{
+    background-color: #ff450080 !important;
+}
+
+.search-form{
+    align-items: center;
+}
+
+.search-form .form-control{
+    height: 40px !important;
+    border-radius: 4px !important;
+}
+
+.nav-bread{
+    display: flex;
+    margin-top: 2%;
+    font-size: 1.3rem;
+    align-items: center;
+    font-weight: 300;
+    justify-content: center;
+  }
+
+
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1256px) {
+    #navbarSupportedContent ul{
+        gap: 5px !important;
+    }
+}
+
+@media only screen and (max-width: 1166px) {
+    #navbarSupportedContent ul li .nav-effects{
+        font-weight: 300 !important;
+        font-size: 1rem !important;
+        color: #2091fe !important;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .mid-bar .sora-heading{
+        width: 60%;
+    }
+    /* .mid-bar .sora-heading h1{
+        display: none;
+    } */
+    /* .mid-bar .sora-heading::after{
+        content: "SORA WHITE";
+        display: flex;
+        font-size: 2.1rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-family: "Roboto";
+    } */
+    .mid-bar .sora-heading img{
+        width: 8%;
+    }
+}
+
+@media only screen and (max-width: 1052px) {
+    #navbarSupportedContent{
+        padding-left: 0% !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-toggler{
+        position: fixed !important;
+        top: 9px !important;
+        left: 8px !important;
+        border: none !important;
+    }
+    .navbar-external{
+        position: sticky !important;
+        /* z-index: -100 !important; */
+        background-color: transparent !important;
+        top: 69px !important;
+    }
+    .mid-bar{
+        position: sticky !important;
+        z-index: 100 !important;
+        top: 0 !important;
+    }
+    .dropdown-menu hr{
+        display: none !important;
+    }
+    .dropdown-menu{
+        border: none !important;
+    }
+    #navbarSupportedContent ul{
+        gap: 0px !important;
+    }
+    #navbarSupportedContent {
+        padding-left: 4% !important;
+    }
+    #navbarSupportedContent ul li .nav-effects::before {
+        display: none !important;
+      }
+      .dropdown-menu{
+        background-color: #e0e0e0 !important;
+    }
+}
+
+@media only screen and (max-width: 884px) {
+    .mid-bar .sora-heading{
+        width: 55%;
+    }
+    .navbar-external{
+        top: 68px !important;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .mid-bar .sora-icons{
+        display: none;
+    }
+    .mid-bar{
+        justify-content: space-around;
+    }
+    .mid-bar .sora-heading img{
+        width: 12%;
+    }
+    .mid-bar{
+        /* padding: 2.5% 0%; */
+        justify-content: flex-end;
+        padding-right: 2%;
+    }
+    .navbar-external{
+        top: 67px !important;
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .mid-bar{
+        /* padding: 2.5% 0%; */
+        justify-content: flex-end;
+        padding-right: 2%;
+    }
+    .mid-bar .sora-heading img{
+        width: 15%;
+    }
+    .navbar-external{
+        top: 65px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 503px){
+    .mid-bar .sora-heading h1{
+        /* content: "SORA WHITE"; */
+        display: flex;
+        font-size: 1.8rem !important;
+        font-weight: 400 !important;
+        letter-spacing: 2px !important;
+        font-family: "Roboto" !important;
+    }
+    .mid-bar .sora-heading h1 span{
+        /* content: "SORA WHITE"; */
+        font-size: 12px !important;
+    }
+    .navbar-external{
+        top: 54px !important;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    
+    .navbar-toggler{
+        position: fixed !important;
+        top: 3px !important;
+        left: 3px !important;
+        border: none !important;
+    }
+    .mid-bar .sora-heading h1{
+        /* content: "SORA WHITE"; */
+        /* display: flex; */
+        font-size: 1.5rem !important;
+        font-weight: 400 !important;
+        letter-spacing: 2px !important;
+        font-family: "Roboto" !important;
+    }
+    .navbar-external{
+        top: 47px !important;
+    }
+}
+
+@media only screen and (max-width: 381px){
+    .mid-bar .sora-heading h1{
+        /* content: "SORA WHITE"; */
+        /* display: flex; */
+        font-size: 22px !important;
+        font-weight: 400 !important;
+        letter-spacing: 2px !important;
+        font-family: "Roboto" !important;
+    }
+    .navbar-external{
+        top: 44px !important;
+    }
+}
+@media only screen and (max-width: 376px){
+    .mid-bar .sora-heading h1 span{
+        font-size: 10px !important;
+    }
+    .navbar-external{
+        top: 42px !important;
+    }
+}
+
+@media only screen and (max-width: 356px){
+    .mid-bar .sora-heading h1{
+        font-size: 20px !important;
+    }
+    .navbar-external{
+        top: 39px !important;
+    }
+}
+@media only screen and (max-width: 330px){
+    .mid-bar .sora-heading h1{
+        font-size: 18px !important;
+    }
+    .navbar-external{
+        top: 37px !important;
+    }
+}

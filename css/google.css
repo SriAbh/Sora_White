@@ -1,0 +1,56 @@
+#google_translate_element {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    /* width: 9%; */
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+
+.goog-te-gadget {
+    font-size: 14px !important;
+}
+
+.goog-te-gadget-simple {
+    all: unset !important;
+}
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed {
+    display: flex !important;
+}
+
+.goog-te-gadget img {
+    display: none !important;
+}
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed span {
+    text-decoration: none;
+    padding: 0px 5px !important;
+    color: #e0e0e0;
+}
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed span:nth-child(3){
+    display: none !important;
+}
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed img{
+    display: none !important;
+}
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed span:nth-child(5){
+    color: #e0e0e0 !important;
+}
+
+@media only screen and (max-width: 550px){
+    .goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed {
+        font-size: 9px;
+    }
+}

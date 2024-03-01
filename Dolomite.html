@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SORA WHITE-Dolomite</title>
+<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+<link rel="stylesheet" href="/css/topBtn.css">
+    <link rel="stylesheet" href="/css/google.css" />
+    <link rel="stylesheet" href="/css/topandnavbar.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+<!-- Bootstrap CSS -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+<style>
+  .underline-heading {
+display: inline-block;
+position: relative;
+}
+
+.underline-heading::after {
+/* content: ""; */
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 100%;
+height: 2px;
+background-color: #2091fe;
+}
+
+.highlight-heading{
+font-weight: 350;
+}
+.header-section {
+background-image: url('/assets/about&production/aggregate-stone.jpg');
+background-size: cover;
+background-position: center;
+text-align: center;
+padding: 100px 0;
+color: #fff;
+position: relative;
+overflow: hidden;
+}
+
+.header-section .container {
+position: relative;
+z-index: 1;
+}
+.header-section h1 {
+font-size: 3rem;
+margin-bottom: 20px;
+color: #2091fe;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+animation: fadeInUp 1s ease-out;
+}
+
+.header-section p {
+font-size: 1.2rem;
+color: white;
+animation: fadeInUp 1s ease-out 0.5s;
+}
+
+.header-section img {
+display: none;
+}
+
+  .animated-text {
+    animation-name: slideInFromLeft;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+  }
+
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .card {
+    transition:  transform 0.3s ease, opacity 0.3s ease;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Apply scale transformation on hover */
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #chemical_specification {
+    font-size: 18px;
+    padding: 20px;
+    background-color: rgb(201, 196, 196); /* Light gray background */
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-out;
+  }
+
+  #chemical_specification:hover {
+    transform: translateY(-5px);  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Increase font size and add margin for individual specifications */
+  #chemical_specification p {
+    margin-bottom: 10px;
+  }
+  #chemical_specification h2 {
+    color: #2091fe; /* Orange-red color */
+}
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Apply animation to the chemical specification section */
+  #chemical_specification {
+    animation: fadeIn 1s ease-out;
+  }
+  .card-img-top {
+        height: 200px; /* Adjust the height as needed */
+        object-fit: cover; /* This property ensures the image covers the entire area of the container */
+    }
+    h1, h2, h3, h4, h5, h6, p, li, table{
+  font-family: "Roboto" !important;
+  font-weight: 300 !important;
+}
+</style>
+</head>
+<body oncontextmenu="return false;">
+
+  <!-- Top Btn -->
+  <button onclick="topFunction()" id="mytopBtn" title="Go to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+   
+
+    <!-- Mid Bar -->
+    <div class="mid-bar">
+      <div class="sora-heading" id="sora-heading">
+        <img src="/assets/Logo/logo srw2.jpg" alt="" />
+        <h1>SORA WHITE  <br><span>A STEP TOWARDS QUALITY...</span></h1>
+      </div>
+      <div id="google_translate_element"></div>
+      <div class="sora-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-external">
+      <div class="container-fluid nav-color">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active nav-effects"
+                aria-current="page"
+                href="/"
+                ><i class="fa-solid fa-house"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active nav-effects"
+                aria-current="page"
+                href="AboutUs"
+                ><i class="fa-solid fa-book-bookmark"></i> About</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-effects"
+                href=""
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><i class="fa-solid fa-truck-fast"></i>
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="Quartz">Quartz</a>
+                </li>
+                <hr />
+                <li>
+                  <a class="dropdown-item" href="Feldspar">Feldspar</a>
+                </li>
+                <hr />
+                <li>
+                  <a class="dropdown-item" href="Ramming-mass"
+                    >Ramming Mass</a
+                  >
+                </li>
+                <hr />
+                <li>
+                  <a class="dropdown-item" href="silicasand"
+                    >Silica Sand</a
+                  >
+                </li>
+                <hr />
+                <li>
+                  <a class="dropdown-item" href="Dolomite">Dolomite</a>
+                </li>
+
+                <!-- <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-effects"
+                href=""
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><i class="fa-solid fa-bars-progress"></i>
+                Operations
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="mining">Mining</a>
+                </li>
+                <hr />
+                <li>
+                  <a class="dropdown-item" href="processing">Processing</a>
+                </li>
+                <hr />
+                <li>
+                  <a class="dropdown-item" href="quality"
+                    >Quality Assurance</a
+                  >
+                </li>
+
+                <!-- <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active nav-effects"
+                aria-current="page"
+                href="OurGallery"
+                ><i class="fa-regular fa-image"></i> Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-effects"
+                aria-current="page"
+                href="contact"
+                ><i class="fa-solid fa-phone"></i> Contact Us</a
+              >
+            </li>
+            <!--<li class="nav-item">-->
+            <!--  <a-->
+            <!--    class="nav-link nav-effects"-->
+            <!--    aria-current="page"-->
+            <!--    href="feedback_form"-->
+            <!--    ><i class="fa-regular fa-comment-dots"></i> Feedback</a-->
+            <!--  >-->
+            <!--</li>-->
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+          <form id="valueForm" class="d-flex search-form" role="search">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+              id="searchInput"
+            />
+            <button onclick="search()" class="btn btn-outline-success search-btn" type="submit" value="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+<!-- Header Section -->
+<header class="header-section">
+  <div class="container">
+    <img src="/assets/about&production/Dolomite.jpg" alt="Dolomite" class="img-fluid mb-4">
+    <h1 class="display-4 highlight-heading">Dolomite</h1>
+    <p class="lead animated-text">Dolomite is a mineral composed of calcium magnesium carbonate, commonly used in agriculture, building materials, and the chemical industry, dolomite offers stability, strength, and durability to various applications. Its occurrence in nature and geological formation contribute to its significance in numerous industrial processes, making it a valuable resource in different sectors.</p>
+  </div>
+</header>
+
+<!-- Main Content -->
+<div class="container mt-5" style="padding-bottom: 3%;">
+  <section id="chemical_specification">
+    <h2 class="underline-heading">Chemical Specification</h2>
+    <p>Composition: Calcium Magnesium Carbonate (CaMg(CO3)2)</p>
+  </section>
+
+  <section id="applications" class="mt-5">
+    <h2 class="underline-heading" style="color: #2091fe;">Applications</h2>
+    <ul>
+        <li>Utilized in the chemical industry.</li>
+      <li>Used as a source of magnesium and calcium.</li>
+      <li>Commonly used in agriculture and building materials.</li>
+    </ul>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="mt-5">
+    <h2 class="mb-4 underline-heading" style="color: #2091fe;">Products</h2>
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="/assets/about&production/aggregate-stone.jpg" class="card-img-top" alt="Dolomite Product 1">
+          <div class="card-body">
+            <h5 class="card-title">Construction Aggregates</h5>
+            <p class="card-text">Dolomite is often crushed and used as a construction material for road base, concrete aggregate, asphalt pavement aggregate, railroad ballast, and other building applications.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="/assets/about&production/Dolomitic Lime.jpg" class="card-img-top" alt="Dolomite Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Dolomitic Lime</h5>
+            <p class="card-text">Dolomite can be calcined to produce dolomitic lime, widely employed in the steel industry, agriculture, water treatment, and soil stabilization applications. Its versatility makes it a valuable resource.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="/assets/about&production/magnesium-element.jpg" class="card-img-top" alt="Dolomite Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Magnesium Compounds</h5>
+            <p class="card-text"> Dolomite can be used to produce various magnesium compounds, such as magnesium oxide (magnesia), magnesium carbonate, magnesium hydroxide, and magnesium sulfate.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="/assets/about&production/ceramics.jpg" class="card-img-top" alt="Dolomite Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Glass and Ceranics</h5>
+            <p class="card-text">Dolomite can be used as a fluxing agent in glass and ceramic production to lower the melting point of raw materials, improve chemical resistance, and enhance the durability of finished products.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="/assets/about&production/soil conditioners.jpg" class="card-img-top" alt="Dolomite Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Soil Conditioners</h5>
+            <p class="card-text"> Dolomite is used as a soil conditioner to neutralize acidic soils and provide magnesium and calcium nutrients to plants. It can improve soil structure and enhance crop yields in agriculture.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="/assets/about&production/Animal feed additive.jpg" class="card-img-top" alt="Dolomite Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Animal Feed Additive</h5>
+            <p class="card-text"> Dolomite is sometimes used as a dietary supplement for livestock and poultry to provide essential minerals like calcium and magnesium for bone development and overall health.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="environmental_impact" class="mt-5">
+    <h2 class="underline-heading" style="color: #2091fe;">Environmental Impact</h2>
+    <p>Dolomite mining and processing may lead to land disturbance, waste generation, and potential environmental contamination. Effective waste management and environmental remediation efforts are necessary to mitigate these impacts.</p>
+  </section>
+
+  <!-- Health and Safety Section -->
+  <section id="health_and_safety" class="mt-5">
+    <h2 class="underline-heading" style="color: #2091fe;">Health and Safety</h2>
+    <p>When handling dolomite, it's essential to take health and safety precautions. Potential hazards include dust inhalation, skin and eye irritation. Protective measures such as wearing respirators, goggles, and gloves are recommended.</p>
+  </section>
+  <section id="geological_formation" class="mt-5">
+    <h2 class="underline-heading" style="color: #2091fe;">Geological Formation</h2>
+    <p>Dolomite is formed through the chemical alteration of limestone by magnesium-rich groundwater. It occurs in sedimentary rock environments and is often associated with limestone and gypsum formations.</p>
+  </section>
+
+  <!-- Extraction and Processing Section -->
+  <section id="extraction_processing" class="mt-5">
+    <h2 class="underline-heading" style="color: #2091fe;">Extraction and Processing</h2>
+    <p>Dolomite is extracted from open-pit mines using various mining techniques such as drilling, blasting, and excavating. Once extracted, it undergoes crushing and grinding processes to produce finely ground dolomite powder. Refining processes may involve screening, washing, and drying to remove impurities.</p>
+  </section>
+
+  <!-- Industrial Applications Section -->
+  <section id="industrial_applications" class="mt-5">
+    <h2 class="underline-heading" style="color: #2091fe;">Industrial Applications</h2>
+    <p>Dolomite finds extensive use in industrial applications such as metallurgy, where it serves as a flux in steelmaking to remove impurities and improve the quality of the final product. It is also used in the production of magnesium metal and as a refractory material in the manufacturing of refractory bricks for high-temperature applications.</p>
+  </section>
+
+  <!-- Add more sections if needed -->
+
+</div>
+
+<!-- footer section start -->
+<footer class="footer-01">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+        <h2 class="footer-heading">SORA WHITE</h2>
+        <div
+          class="footer-logo"
+          style="
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <img
+            src="/assets/Logo/logo srw2.png"
+            alt=""
+            style="width: 70%; border-radius: 100px;"
+          />
+        </div>
+        <p>
+          SORA WHITE Pvt.Ltd. is your trusted partner for high-quality
+          minerals that cater to various industries. With our commitment to
+          quality, innovation, and customer satisfaction, along with our
+          advanced manufacturing unit, access to high-quality raw materials,
+        </p>
+        <ul class="ftco-footer-social p-0">
+          <li class="ftco-animate">
+            <a
+              href=""
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Twitter"
+              ><span class="ion-logo-twitter"
+                ><i class="fa-brands fa-facebook"></i></span
+            ></a>
+          </li>
+          <li class="ftco-animate">
+            <a
+              href=""
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Facebook"
+              ><span class="ion-logo-facebook"
+                ><i class="fa-brands fa-linkedin"></i></span
+            ></a>
+          </li>
+          <li class="ftco-animate">
+            <a
+              href=""
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Instagram"
+              ><span class="ion-logo-instagram"
+                ><i class="fa-brands fa-instagram"></i></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+        <h2 class="footer-heading">Latest News</h2>
+        <div class="block-21 mb-4 d-flex">
+          <a
+            class="img mr-4 rounded"
+            style="background-image: url(/assets//footer/image_1.jpg)"
+          ></a>
+          <div class="text">
+            <h3 class="heading">
+              <a href="#"
+                >Even the all-powerful Pointing has no control about</a
+              >
+            </h3>
+            <div class="meta">
+              <div>
+                <a href="#"
+                  ><span class="icon-calendar"></span>Feb. 15, 2024</a
+                >
+              </div>
+              <div>
+                <a href="#"><span class="icon-person"></span> Admin</a>
+              </div>
+              <div>
+                <a href="#"><span class="icon-chat"></span>24</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-21 mb-4 d-flex">
+          <a
+            class="img mr-4 rounded"
+            style="background-image: url(/assets//footer/image_2.jpg)"
+          ></a>
+          <div class="text">
+            <h3 class="heading">
+              <a href="#"
+                >Even the all-powerful Pointing has no control about</a
+              >
+            </h3>
+            <div class="meta">
+              <div>
+                <a href="#"
+                  ><span class="icon-calendar"></span>Feb, 15, 2024</a
+                >
+              </div>
+              <div>
+                <a href="#"><span class="icon-person"></span> Admin</a>
+              </div>
+              <div>
+                <a href="#"><span class="icon-chat"></span>24</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+        <h2 class="footer-heading">Quick Links</h2>
+        <ul class="list-unstyled">
+          <li><a href="/" class="py-2 d-block">Home</a></li>
+          <li>
+            <a href="AboutUs" class="py-2 d-block">About</a>
+          </li>
+          <li><a href="#Products" class="py-2 d-block">Product</a></li>
+          <li>
+            <a href="OurGallery" class="py-2 d-block">Gallery</a>
+          </li>
+          <li>
+            <a href="contact" class="py-2 d-block">Contact</a>
+          </li>
+          <!--<li>-->
+          <!--  <a href="feedback_form" class="py-2 d-block">Feedback</a>-->
+          <!--</li>-->
+        </ul>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+        <h2 class="footer-heading">Have a Questions?</h2>
+        <div class="block-23 mb-3">
+          <ul>
+            <li>
+              <span class="icon ion-ios-pin"
+                ><i class="fa-solid fa-location-dot"></i></span
+              ><span class="text"
+                >G-110, 111 Riico Industrial Area, Jaipur Road, Kekri Dist.
+                Ajmer (Rajasthan) P.O. BOX 305404</span
+              >
+            </li>
+            <li>
+              <a href="tel:+91-9414000363"
+                ><span class="icon ion-ios-call"
+                  ><i class="fa-solid fa-phone"></i></span
+                ><span class="text">+91-9414000363</span></a
+              >
+            </li>
+            <li>
+              <a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=jrjtXSpVtxQVCxBcqBKgsJblzkgPNbftwzvVgCZnlcNNNnrNDBpPSHPTqFJhmXmcQjHvJhJM"
+                ><span class="icon ion-ios-send"
+                  ><i class="fa-solid fa-paper-plane"></i></span
+                ><span class="text">sanjay.shivamin@gmail.com</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-12 text-center">
+        <hr />
+
+        <p class="copyright">
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy; 2024
+          <!-- <script>
+            document.write(new Date().getFullYear());
+          </script> -->
+          All rights reserved | Made by
+          <a href="https://Softapper.com" target="_blank">Softapper</a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer section end -->
+
+  <!-- Bootstrap -->
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"
+></script>
+
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
+></script>
+
+<!-- Google Translate -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: "en",
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      },
+      "google_translate_element"
+    );
+  }
+</script>
+<script
+  type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+></script>
+
+<script src="/js/topBtn.js"></script>
+<script src="/js/search.js"></script>
+
+<!-- Bootstrap JS, jQuery, and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Add this script tag at the end of your HTML body -->
+<script>
+  // Smooth scrolling for anchor links
+  $(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+
+  // Parallax effect for header background image
+  $(window).scroll(function() {
+    var scrollTop = $(this).scrollTop();
+    $('.header-section').css('background-position-y', -(scrollTop / 2) + 'px');
+  });
+</script>
+
+</body>
+</html>
